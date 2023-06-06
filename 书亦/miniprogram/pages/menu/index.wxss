@@ -1,0 +1,87 @@
+.header{
+  padding: 0 30rpx;
+  margin-bottom: 30rpx;
+}
+.search-input{
+display: flex;
+align-items: center;
+background-color: #f1f1f2;
+width: 480rpx;
+height: 70rpx;
+border-radius: 10rpx;
+}
+.search-icon{
+  width: 50rpx;
+  height: 50rpx;
+  margin: 0 20rpx 0 10rpx;
+}
+.menu-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30rpx 20rpx 30rpx;
+}
+.menu-info .store-info .store-address{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-info .store-info .store-address .address{
+  width: 342rpx;
+  height: 50rpx;
+  font-size: 38rpx;
+  font-weight: bold;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.star{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 5rpx;
+}
+.right{
+  width: 30rpx;
+  height: 28rpx;
+  margin-left: 5rpx;
+}
+.menu-info .distance{
+  display: flex;
+  align-items: center;
+  margin-top: 10rpx;
+  font-size: 30rpx;
+  color: #777777;
+}
+.rang-btn{
+  display: flex;
+  width: 210rpx;
+  height: 70rpx;
+  background-color: #f1f1f2;
+  border-radius: 10rpx;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+.rang-btn .zq{
+  width: 105rpx;
+  height: 50rpx;
+  background-color: #89D06D;
+  color: #ffff;
+  text-align: center;
+  line-height: 50rpx;
+  border-radius: 8rpx;
+  font-size: 30rpx;
+}
+.rang-btn .wm{
+  color: #777777;
+  text-align: center;
+  font-size: 30rpx;
+}
+
+.menu{
+  display: grid;
+  padding-right: 32rpx;
+  grid-template-columns: 170rpx 1fr;
+  gap: 20rpx; /* 两列之间的间隙 */
+  background-color: #f6f6f6;
+ 
+}

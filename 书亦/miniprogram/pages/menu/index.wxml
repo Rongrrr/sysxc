@@ -1,0 +1,47 @@
+<view class="header" style="{{headerStyle}}">
+  <view class="search-input">
+    <image src="../../assets/icons/search.svg" mode="" class="search-icon"/>
+    <input type="text" placeholder="请输入商品名称" class="search"/>
+  </view>
+</view>
+
+<view class="menu-info">
+  <view class="store-info">
+    <view class="store-address" bindtap="selectStoreBack">
+        <image src="../../assets/icons/start.png" mode="" class="star"/>
+        <view class="address">
+        {{global.currentStore.name}}
+        </view>
+        <image src="../../assets/icons/arrow-right.svg" mode="" class="right"/>
+    </view>
+
+    <view class="distance">
+    距离您<view class="distance-num" style="color: #89D06D;">{{global.currentStore.distance}}km</view>
+    </view>
+  </view>
+  
+  <view class="rang-btn">
+    <view class="zq">自取</view>
+    <view class="wm">外卖</view>
+  </view>
+</view>
+<!-- 间隔块，防止scroll-view塌陷 -->
+<view style="height: 44rpx; background-color: #f6f6f6;"></view>
+
+<view class="menu">
+  <!-- 侧边栏 -->
+  <sidebar list="{{goodsList}}" bind:on-change="onSidebarChange" defaultCurrent="{{sideBarCurrent}}"></sidebar>
+  <!-- 商品 -->
+  <goods-list list="{{goodsList}}" current="{{currentCategoryIndex}}" bind:on-change="onGoodsListChange" bind:on-selected="onGoodSelected">
+    <!-- 轮播图 -->
+    <view slot="before">
+      <swiper-list list="{{swiperList}}"></swiper-list>
+    </view>
+  </goods-list>
+</view>
+<!-- 购物车 -->
+<chart></chart>
+
+<dialog show="{{goodsDialogShow}}">
+  <goods-detail goods="{{selectedGoods}}"></goods-detail>
+</dialog>

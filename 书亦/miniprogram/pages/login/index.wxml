@@ -1,0 +1,8 @@
+<view class="page">
+  <image src="../../assets/images/head.png" mode="" class="logo"/>
+  <view class="login-title">书亦烧仙草</view>
+  <view class="intro">加入书亦会员，立享更多优惠</view>
+  <view class="login-tips">授权绑定手机号，为您提供更好服务</view>
+  <button open-type="getPhoneNumber" class="login-btn" bindgetphonenumber="Login">一键绑定</button>
+  <view class="cancel">取消</view>
+</view>

@@ -1,0 +1,12 @@
+.track{
+  background-color: #ebebeb;
+  height: 6rpx;
+  width: 100%;
+  border-radius: 3rpx;
+  overflow: hidden;
+}
+.bar{
+  background-color: #89D06D;
+  height: 100%;
+  width: 0rpx;
+}

@@ -1,0 +1,39 @@
+<view class="goods-detail">
+  <scroll-view class="scroll" scroll-y>
+    <view wx:for="{{goods}}" wx:for-item="goods" wx:key="index" class="goods-info">
+      <image class="goods-cover" src="{{goods.cover}}"  mode=""/>
+      <view class="meta">
+        <view class="title">{{goods.name}}</view>
+        <view class="description">{{goods.description}}</view>
+      </view>
+  </view>
+
+  <!-- 规格分类 -->
+  <view class="specs-area">
+    <view wx:for="{{specsCategory.result}}" wx:key="unique" class="specs-ccategory">
+      <view class="label">{{item.label}}</view>
+      <view class="specs-list">
+        <view wx:for="{{item.specs}}" wx:key="unique" class="specs">{{item.label}}</view>
+
+      </view>
+    </view>
+
+  </view>
+  </scroll-view>
+
+
+  <!-- 确认动作 -->
+  <view class="action-area">
+    <view class="price-num">
+      <view class="price">
+      <view style="font-size: 22rpx;">￥</view>
+      10</view>
+      <view class="num">
+        <view class="jian">-</view>
+        <view class="number">1</view>
+        <view class="jia">+</view>
+      </view>
+    </view>
+    <view class="submit-btn">确定</view>
+  </view>
+</view>

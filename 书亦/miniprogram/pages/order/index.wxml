@@ -1,0 +1,27 @@
+<view class="order">
+  <view class="order-card">
+    <view class="header">
+      <view class="info">
+        <view class="title">永川人人乐店</view>
+        <view class="time">2023-05-06 17:34:09</view>
+      </view>
+      <view class="status">已完成></view>
+    </view>
+    <view class="order-num">
+      <image src="../../assets/icons/cup.png" mode=""/>
+      <view class="num">取餐码</view><view style="font-size: 38rpx;">1020</view>
+    </view>
+    <view class="order-production">
+      <image src="../../assets/product-img/tao.png" mode=""/>
+      <view class="price-copies">
+        <view class="price">￥8.8</view>
+        <view class="copies">共1件</view>
+      </view>
+      
+    </view>
+    <view class="order-btn">
+      <view class="pj-btn">去评价</view>
+      <view class="again-btn">再来一单</view>
+    </view>
+  </view>
+</view>

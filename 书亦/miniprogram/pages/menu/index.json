@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "sidebar":"../../components/sidebar/index",
+    "swiper-list":"../../components/swiper-list/index",
+    "goods-list":"../../components/goods-list/index",
+    "chart":"../../components/chart/index",
+    "dialog":"../../components/dialog/index",
+    "goods-detail":"../../components/goods-detail/index"
+  },
+  "navigationStyle": "custom"
+}

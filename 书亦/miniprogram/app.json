@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/store/index",
+    "pages/menu/index",
+    "pages/order/index",
+    "pages/me/index",
+    "pages/web-view/index",
+    "pages/product/detail",
+    "pages/login/index"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "您的位置将为您匹配最佳门店"
+    }
+  },
+  "window": {
+    "backgroundColor": "#f6f6f6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "书亦烧仙草",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#89D06D",
+    "list":[
+    {
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "./assets/icons/home.png",
+      "selectedIconPath": "./assets/icons/home_selected.png"
+    },
+    {
+      "pagePath": "pages/store/index",
+      "text": "点餐",
+      "iconPath": "./assets/icons/menu.png",
+      "selectedIconPath": "./assets/icons/menu_selected.png"
+    },
+    {
+      "pagePath": "pages/order/index",
+      "text": "订单",
+      "iconPath": "./assets/icons/order.png",
+      "selectedIconPath": "./assets/icons/order_selected.png"
+    },
+    {
+      "pagePath": "pages/me/index",
+      "text": "我的",
+      "iconPath": "./assets/icons/me.png",
+      "selectedIconPath": "./assets/icons/me_selected.png"
+    }
+  ]
+  },
+  "sitemapLocation": "sitemap.json"
+  
+  
+}

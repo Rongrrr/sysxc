@@ -1,0 +1,75 @@
+<view class="page">
+  <view class="header">
+    <tabs tabs="{{[{value:'nearby',label:'附近门店'},{value:'recent',label:'常去门店'}]}}"></tabs>
+    <input type="text" class="search" placeholder="请输入门店名称"/>
+  </view>
+  <map 
+  id="store-map"
+  class="store-map" 
+  latitude="{{latitude}}"
+  longitude="{{longitude}}"
+  show-location
+  markers="{{markers}}"
+  style="height: {{collapse ? '0' : '500rpx'}};"
+  >
+    <image class="current-icon" src="../../assets/icons/current.png" bindtap="goToCurrentLocation"></image>
+  </map>
+  <view class="collapse-area" bindtap="collapse">
+    <view class="title">
+    {{collapse ? '展开地图' : '收起地图'}}
+    </view>
+    <image class="icon" src="{{'../../assets/icons/arrow-'+(collapse ? 'down':'up')+'.svg'}}" mode=""/>
+  </view>
+  <scroll-view class="store-list" style=" height: calc(100vh - {{collapse ? 200 : 700}}rpx);" scroll-y>
+    <view wx:for="{{storeList}}" wx:key="index" class="store-area" bindtap="pupopStoreDetail" data-store="{{item}}">
+      <view class="info-box">
+        <view class="store-title">
+          <image src="../../assets/icons/store.png" mode=""/>
+          <view class="name">{{item.name}}</view>
+        </view>
+        
+        <view class="address">
+          <view class="distance">{{item.distance}}km|<text>{{item.address}}</text></view>
+          
+        </view>
+        <view class="work-time">营业时间：{{item.opening_time}}</view>
+        <view class="working">{{dict[item.status]}}</view>
+      </view>
+
+      <view class="location-box">
+        <image bindtap="call" src="../../assets/icons/phone.png" mode=""/>
+        <image bindtap="navgationLocation" data-location="{{item.location}}" src="../../assets/icons/fly.png" mode=""/>
+        
+      </view>
+    </view>
+
+  </scroll-view>
+
+  <page-container
+  wx:if="{{global.currentStore}}"
+  show="{{storeDetailShow}}"
+  round
+  position="bottom"
+  class="store-detail"
+  >
+   <view class="container">
+    <view class="header">
+      <view class="info">
+        <view class="title">{{global.currentStore.name}}</view>
+        <view class="address">{{global.currentStore.address}}</view>
+      </view>
+      <view class="distance">
+        距离  <view style="color: #89D06D;">{{global.currentStore.distance}}km</view> 
+      </view>
+    </view>
+    <map 
+    id="store-detail-map"
+    class="store-detail-map" 
+    latitude="{{global.currentStore.location.latitude}}"
+    longitude="{{global.currentStore.location.longitude}}"
+    markers="{{markers}}"
+    ></map>
+  <view class="store-detail-btn" bindtap="goToMenu" >进入门店</view>
+   </view>
+  </page-container>
+</view>

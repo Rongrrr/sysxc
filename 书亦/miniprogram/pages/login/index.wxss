@@ -1,0 +1,44 @@
+.page{
+  padding-top: 176rpx;
+  
+}
+.logo{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 75rpx;
+  overflow: hidden;
+}
+.login-title{
+  margin-bottom: 160rpx;
+   color: #65AC3D;
+}
+.intro{
+  font-size: 37rpx;
+  font-weight: bold;
+  margin-bottom: 84rpx;
+  color: #65AC3D;
+}
+.login-tips{
+  font-size: 20rpx;
+  color:  rgb(128, 128, 128);
+  margin-bottom: 14rpx;
+}
+.login-btn{
+  width: 590rpx;
+  height: 85rpx;
+  background:linear-gradient(#6db643,#8fc274,#b1d1a2) ;
+  color: #fff;
+  border-radius: 10rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 42rpx;
+}
+.cancel{
+  color: #c1c1c1;
+  margin-bottom: 100%;
+}
+
+.button-hover{
+  opacity: 0.7;
+}

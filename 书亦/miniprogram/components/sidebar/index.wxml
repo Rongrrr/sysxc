@@ -1,0 +1,8 @@
+<!--components/sidebar/index.wxml-->
+<scroll-view class="sidebar" scroll-y show-scrollbar="false" enhanced>
+  <view wx:for="{{list}}" wx:key="index" class="sidebar-item {{index === current ? 'active' : ''}}" bindtap="switchBar" data-current="{{index}}">
+    <view wx:if="{{index === current}}" class="line-left"></view>
+    <view class="text">{{item.name}}</view>
+  </view>
+
+</scroll-view>

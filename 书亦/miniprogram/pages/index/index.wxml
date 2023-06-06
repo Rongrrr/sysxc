@@ -1,0 +1,68 @@
+<view class="page">
+  <!-- 轮播图 -->
+  <swiper-list 
+  list="{{swiperList}}"
+  style="width: 100vw;height: 630rpx;"
+  dots-style="left: 50rpx;bottom: 58rpx;"
+  round
+  ></swiper-list>
+  <!-- 会议/积分 -->
+  <view class="member-area">
+    <view class="vip-box">
+      <image src="../../assets/images/head.png" mode=""/>
+      <view class="meta">
+        <view class="title">{{(memberInfo && user.phoneNumber) ? '书亦会员' : '尊敬的会员'}}</view>
+        <progress-bar wx:if="{{(memberInfo && user.phoneNumber)}}" value="{{30}}" color="#89D06D" trackColor="#ffff"/>
+        <view class="tips">{{(memberInfo && user.phoneNumber) ? '再升1级，可享【升级礼包】等6项权益' : "会员可享【限时优惠】等多项权益"}}</view>
+      </view>
+    </view>
+    <view wx:if="{{!(memberInfo && user.phoneNumber)}}" class="login-btn" bindtap="doLogin">授权登录</view>
+  </view>
+  <!-- 点餐 -->
+  <view class="menu-area">
+    <view class="ziqu" bindtap="onMenuTap">
+      <view class="ziqu-title">到店自取</view>
+      <image src="../../assets/images/ziqu.png" mode="" class="ziqu-img"/>
+    </view>
+    <view class="waimai">
+      <view class="waimai-title">外卖到家</view>
+      <image src="../../assets/images/waimai.png" mode="" class="waimai-img"/>
+    </view>
+  </view>
+  <view class="banner-list">
+    
+      <image src="../../assets/images/douyincart.png" mode="" class="b1-img"/>
+    
+    <view class="banner">
+      <text>邀请有礼</text>
+      <view class="tips">邀好友享8折券</view>
+      <image src="../../assets/images/gift.png" mode=""/>
+    </view>
+    <view class="banner">
+      <text>仙草日历</text>
+      <view class="tips">签到赢好礼</view>
+      <image src="../../assets/images/date.png" mode=""/>
+    </view>
+  </view>
+  <!-- 新品推荐 -->
+  <view class="newProduction" bindtap="newProduct">
+    <view class="product1">
+      <view class="title">双桃酸奶昔</view>
+      <text>新品推荐</text>
+      <image src="../../assets/images/newPro1.png" mode=""/>
+    </view>
+    <view class="right">
+      <view class="product">
+        <view class="title">双桃冰茶</view>
+        <text>新品推荐</text>
+        <image src="../../assets/images/newPro2.png" mode=""/>
+      </view>
+      <view class="product">
+        <view class="title">牛油果酸奶昔</view>
+        <text>新品推荐</text>
+        <image src="../../assets/images/niuyouguo.gif" mode=""/>
+      </view>
+    </view>
+    
+  </view>
+</view>

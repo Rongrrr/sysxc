@@ -1,0 +1,36 @@
+.sidebar{
+  width: 100%;
+  height: auto;
+  background-color: #f8f8f8;
+}
+::-webkit-scrollbar{
+  display: none;
+  width: 0;
+  height: 0;
+  color:transparent;
+}
+.sidebar .sidebar-item{
+  width: 100%;
+  height: 140rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.active{
+  width: 80%;
+  background-color: #ffff;
+  border-radius: 10rpx;
+}
+.line-left{
+  width: 10rpx;
+  height: 100%;
+  background-color: #89D06D;
+  position: absolute;
+  left: 0;
+}
+.sidebar .sidebar-item .text{
+  font-size: 32rpx;
+  font-weight: 400;
+  text-align: center;
+}

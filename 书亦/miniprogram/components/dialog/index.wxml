@@ -1,0 +1,3 @@
+<page-container show="{{show}}" custom-style="border-radius:6%">
+  <slot></slot>
+</page-container>

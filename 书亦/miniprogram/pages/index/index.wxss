@@ -1,0 +1,157 @@
+
+
+
+.member-area{
+  margin-top: -20px;
+  z-index: 2;
+  width: 688rpx;
+  height: 174rpx;
+  border-radius: 20rpx;
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow: 0rpx 0rpx 8rpx rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: row;
+  padding:20px 10px;
+  box-sizing: border-box;
+}
+.member-area .vip-box{
+  display: flex;
+  
+}
+.member-area .vip-box image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+  overflow: hidden;
+  margin-right: 15rpx;
+  flex-shrink: 0;
+}
+.meta .title{
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
+.meta .tips{
+  font-size: 24rpx;
+  color: rgb(128, 128, 128);
+  margin-top: 10rpx;
+}
+.login-btn{
+  width: 150rpx;
+  height: 65rpx;
+  border-radius: 7rpx;
+  background:linear-gradient(#89D06D,#65AC3D,#89D06D) ;
+  color: #fff;
+  font-size: 28rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:10rpx ;
+  margin-left: 10rpx;
+}
+.login-btn:active{
+  opacity: 0.7;
+}
+
+.menu-area{
+  width: 688rpx;
+  height: 340rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 20rpx 0;
+  box-sizing: border-box;
+}
+.ziqu,.waimai{
+  border-radius: 30rpx;
+  background-color: #fff;
+  text-align: center;
+  padding:20rpx 15rpx ;
+  
+}
+.ziqu-img,.waimai-img{
+  width: 300rpx;
+  height: 250rpx;
+}
+.ziqu-title,.waimai-title{
+  font-size: 34rpx;
+  font-weight: bold;
+}
+.banner-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  box-sizing: border-box;
+  margin-bottom: 20rpx;
+}
+.banner,.b1-img{
+  width: 216rpx;
+  height: 160rpx;
+  border-radius: 10rpx;
+  background-color: #fff;
+  margin: 0 5rpx;
+}
+
+.banner image{
+  width: 120rpx;
+  height: 90rpx;
+  float: right;
+}
+.banner text{
+  font-size: 30rpx;
+  margin-top:10rpx;
+  margin-left: 10rpx;
+}
+.banner .tips{
+  font-size: 24rpx;
+  color: rgb(128, 128, 128);
+  margin-left:10rpx;
+}
+.newProduction{
+  width: 660rpx;
+  height: 410rpx;
+  background:linear-gradient(#f9fdef,#f1fadc) ;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: row;
+
+}
+.newProduction .product1{
+  width: 320rpx;
+  height: 371rpx;
+  background-color: #fff;
+  overflow: hidden;
+  margin-top: 20rpx;
+  margin-left: 8rpx;
+  border-radius: 20rpx;
+}
+.newProduction .product1 image{
+  width: 320rpx;
+  height: 268rpx; 
+}
+.right .product{
+  width: 320rpx;
+  height: 181rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+  margin-top: 15rpx;
+  position: relative;
+  margin-left: 8rpx;
+}
+.right .product image{
+  width: 148rpx;
+  height: 120rpx;
+  position: absolute;
+  right: 5rpx;
+  bottom: 5rpx;
+}
+.newProduction .title{
+  font-size: 34rpx;
+  margin-left: 8rpx;
+}
+.newProduction text{
+  font-size: 27rpx;
+  color: #fa4c4c;
+  margin-left: 8rpx;
+}

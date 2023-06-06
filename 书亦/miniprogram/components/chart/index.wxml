@@ -1,0 +1,9 @@
+<view class="chart">
+  <image src="../../assets/images/chart-icon.png" class="chart-icon"/>
+  <view class="summary">
+    ￥<view class="price">{{chart.totalPrice}}</view>
+  </view>
+  <view class="check-btn {{chart.list.length === 0 ? 'disabled': ''}}">
+    去结算
+  </view>
+</view>

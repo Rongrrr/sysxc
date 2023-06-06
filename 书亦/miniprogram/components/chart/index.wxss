@@ -1,0 +1,35 @@
+.chart{
+  box-sizing: border-box;
+  width: 100vw;
+  padding: 6rpx 24rpx 8rpx;
+  display: flex;
+  align-items: center;
+}
+.chart image{
+  width: 140rpx;
+  height: 140rpx;
+  margin-top: -40rpx;
+}
+.summary{
+  margin-left: 30rpx;
+  flex: 1;
+  display: flex;
+  align-items: baseline;
+}
+.price{
+  font-size: 38rpx;
+  font-weight: bold;
+}
+.check-btn{
+  width: 236rpx;
+  height: 90rpx;
+  background:linear-gradient(#71B64A,#8CC170,#ACCE9B);
+  border-radius: 8rpx;
+  line-height: 90rpx;
+  text-align: center;
+  color: #fff;
+}
+.disabled{
+  background-color: #f7f7f7;
+  color: #777777;
+}
